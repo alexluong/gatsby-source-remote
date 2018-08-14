@@ -1,0 +1,28 @@
+{
+  "name": "gatsby-source-remote",
+  "version": "0.1.0",
+  "description": "Gatsby source plugin for downloading remote files",
+  "author": "Alex Luong",
+  "main": "gatsby-node.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && babel src --out-dir dist --ignore **/__tests__",
+    "watch": "babel --watch src --out-dir dist --ignore **/__tests__",
+    "format": "prettier --write src/**/*.js",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+    "gatsby-source-filesystem": "^2.0.1-beta.10"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.0.0-beta.99"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/node": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "prettier": "^1.14.2"
+  }
+}
